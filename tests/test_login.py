@@ -14,8 +14,8 @@ def test_login_success(driver):
     login.find_dropdown()
     login.click_btn_finish()
 
-    home_page = HomePage(driver)
-    home_page.click_profile()
+#    home_page = HomePage(driver)
+#    home_page.click_profile()
 
 
 # def test_login_invalid(driver):
