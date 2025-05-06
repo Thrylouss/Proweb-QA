@@ -20,12 +20,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser
-          sudo ln -s /usr/bin/chromium-browser /usr/bin/google-chrome
-
       - name: Run tests
         env:
           DISPLAY: :99
